@@ -1,0 +1,53 @@
+@keyframes grow {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.logo-container {
+    height: 50px;
+    width: fit-content;
+
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+
+    .logo-home {
+        text-decoration: none;
+        display: flex;
+        
+        .logo-image {
+            .logo-flame {
+                animation: grow 1s;
+            }
+        }
+    
+        .logo-text {
+            font-family: "PaytoneOne-Regular";
+            
+            .main {
+                color: black;
+                font-size: 41px;
+                color: black;
+                position: relative;
+                top: -16px;
+            }
+        
+            .sub {
+                font-size: 14px;
+                color: grey;
+                position: relative;
+                top: -30px;
+                right: -2px;
+            }
+        
+        }
+    }
+
+
+}

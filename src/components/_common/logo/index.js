@@ -10,10 +10,7 @@ export default function Logo() {
         <div className='logo-container'>
             <Link className='logo-home' to='/'>
                     <div className='logo-image'>
-                        <img className='logo-flame'
-                            alt="Lucu Logo"
-                            src={FlameIcon}
-                            />
+                        <FlameIcon className='logo-flame'/>
                     </div>
                     <div className='logo-text'> 
                         <div className='main'>Lucu</div>

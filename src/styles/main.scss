@@ -1,5 +1,8 @@
 @import './font.scss';
 
+body {
+    background: lightgray;
+}
 
 .service-icon {
     height: 39px;
@@ -7,5 +10,177 @@
 
 .service-header {
     font-size: 51px;
-    font-family: "Quicksand-Regular";
+    // font-family: "Quicksand-Regular";
+}
+
+.hero-img {
+    position: absolute;
+    z-index: 1;
+    height: 710px;
+    width: 330px;
+    top: 120px;
+    left: 60px;
+}
+
+.hero-box-container {
+    width: 100%;
+
+    .hero-box {
+        width: 95%;
+        height: 800px;
+        background: white;
+        right: 120px;
+        box-shadow: 30px 30px grey;
+        top: 93px;
+        border-radius: 40px;
+        margin: 20px auto;
+    }
+}
+
+.tagline1 {
+    display: inline-flex;
+    position: absolute;
+    width: 1010px;
+    top: 170px;
+    left: 410px;
+}
+
+.outer {
+    display: inline-flex;
+}
+
+.tagline2 {
+    display: inline-flex;
+    position: absolute;
+    width: 1010px;
+    top: 390px;
+    left: 410px;
+}
+
+.hero-text {
+    margin: auto;
+    // position: absolute;
+    font-size: 110px;
+    width: 100%;
+    // top: 170px;
+    // left: 410px;
+    font-family: Roboto-Medium;
+
+    // overflow: hidden; /* Ensures the content is not revealed until the animation */
+    // border-right: .15em solid orange; /* The typwriter cursor */
+    // white-space: nowrap; /* Keeps the content on a single line */
+    // margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    // animation: 
+    //   typing 3.5s steps(40, end),
+    //   blink-caret .75s step-end infinite;
+
+    animation-name:slideup;
+    animation-delay:3s;
+    animation-duration:0.8s;
+    animation-fill-mode:forwards;
+    animation-timing-function:ease-out;
+}
+  
+  /* The typing effect */
+@keyframes typing {
+    from { left: -500px }
+    to { left: 0 }
+}
+
+.hero-text2 {
+    margin: auto;
+    font-size: 110px;
+    width: fit-content;
+    font-family: Roboto-Medium;
+
+    animation-name:slideup;
+    animation-delay:3s;
+    animation-duration:0.8s;
+    animation-fill-mode:forwards;
+    animation-timing-function:ease-out;
+}
+
+@keyframes slideup {
+    0%{left:-500px}
+    100%{left:410px;}
+  }
+
+.signup-form {
+    padding: 69px;
+    position: absolute;
+    top: 181px;
+    right: 300px;
+    font-size: 30px;
+    height: 450px;
+    background: #ffcc10;
+    /* padding: 21px; */
+    border-radius: 60px;
+    font-family: 'Roboto-Medium';
+    box-shadow: 13px 13px 0px 0px grey;
+
+    .form-input input {
+        width: 330px;
+        height: 30px;
+        margin: 10px 0;
+        font-size: 29px;
+        border: 0;
+        padding: 10px;
+        text-align: center;
+        // &::placeholder {
+        //     color: green;
+        //     font-size: 2em;
+        // }
+    }
+
+    .form-input label {
+        display: none;
+    }
+}
+
+.hero-box-front {
+    width: 73%;
+    background: lightgray;
+    height: 800px;
+    position: absolute;
+    right: 270px;
+    top: 203px;
+}
+
+.gears {
+    min-width: 250px;
+    // position: absolute;
+    // top: 10px;
+    // left: 960px;
+}
+
+.money {
+    min-width: 250px;
+}
+
+#gear1 {
+    animation: spincw 7s infinite linear;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#gear2 {
+    animation: spinccw 5s infinite linear;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+#gear3 {
+    animation: spincw 3s infinite linear;
+    transform-box: fill-box;
+    transform-origin: center;
+}
+
+@keyframes spincw {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@keyframes spinccw {
+    from {transform:rotate(360deg);}
+    to {transform:rotate(0deg);}
 }

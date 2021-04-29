@@ -5,6 +5,8 @@ import Logo from '../_common/Logo';
 // import Navbar from './Navbar';
 // import headerLinks from '../../content/HeaderLinks';
 
+import './header.scss'
+
 export default function Header(props) {
 //   const {
 //     allContentfulProduct: { edges: products },
@@ -36,10 +38,9 @@ export default function Header(props) {
 //   };
 
   return (
-    <header className="container">
+    <header className="header">
       <div className="logo-container">
         <Logo />
-        <span>blah</span>
         {/* <span
           className="mobile-nav bell"
           onClick={handleRightMenuToggle}>

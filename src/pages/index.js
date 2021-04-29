@@ -24,44 +24,52 @@ const IndexPage = () => {
         <title>Home Page</title>
 
         <section>
-          <FlameCandle className='hero-img'/>
 
-          <div className='hero-box-container'>
-            <div className='hero-box'>
-            </div>
-          </div>
+          <div className='hero-container'>
 
-          <div className='tagline1'>
-            <Gears className='gears' />
-            <div className='hero-text'>
-              Better Marketing
-            </div>
-          </div>
-
-          <div className='tagline2'>
-            <Money className='money'/>
-            <div className='hero-text2'>
-              Higher Conversion
-            </div>
-          </div>
-
-          <form className='signup-form'>
-            <div className='form-input'>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" placeholder="Name"/>
-            </div>
-            <div className='form-input'>
-              <label for="company">Company:</label>
-              <input type="text" id="company" name="company" placeholder="Company"/>
-            </div>
-            <div className='form-input'>
-              <label for="company">Mobile #:</label>
-              <input type="text" id="mobile" name="mobile" placeholder="Mobile"/>
+            <div className='hero-img-container'>
+              <FlameCandle className='hero-img'/>
             </div>
 
-            <button>Submit</button>
-          </form>
+            {/* <div className='hero-box-container'>
+              <div className='hero-box'>
+              </div>
+            </div> */}
+
+            <div className='hero-content'>
+              <div className='tagline1'>
+                <Gears className='gears' />
+                <div className='hero-text'>
+                  Better Marketing
+                </div>
+              </div>
+
+              <div className='tagline2'>
+                <Money className='money'/>
+                <div className='hero-text2'>
+                  Higher Conversion
+                </div>
+              </div>
+            </div>
+
+            <form className='signup-form'>
+              <div className='form-input'>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Name"/>
+              </div>
+              <div className='form-input'>
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company" placeholder="Company"/>
+              </div>
+              <div className='form-input'>
+                <label for="company">Mobile #:</label>
+                <input type="text" id="mobile" name="mobile" placeholder="Mobile"/>
+              </div>
+
+              <button>Submit</button>
+            </form>
           
+          </div>
 
         </section>
 
